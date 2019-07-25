@@ -1,0 +1,170 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+int main()
+{
+   string s,f;
+   int t,i,c;
+   cin>>t;
+  while(t--)
+   {
+        c=0;
+      cin>>s>>f;
+
+          if(s.length()>f.length()|s.length()<f.length())
+      {
+        cout<<"No"<<endl;
+
+      }
+      else
+      {
+          for(i=0;i<s.length();i++)
+      {
+          if(s[i]=='i'|s[i]=='I'|s[i]=='E')
+          {
+              s[i]='e';
+          }
+           if(f[i]=='i'|f[i]=='I'|f[i]=='E')
+          {
+              f[i]='e';
+          }
+           if(s[i]=='P'|s[i]=='B'|s[i]=='b')
+          {
+              s[i]='p';
+          }
+           if(f[i]=='P'|f[i]=='B'|f[i]=='b')
+          {
+              f[i]='p';
+          }
+          if(f[i]=='A'|s[i]=='A')
+          {
+              s[i]='a';
+               f[i]='a';
+          }
+          if(f[i]=='C'|s[i]=='C')
+          {
+              s[i]='c';
+              f[i]='c';
+          }
+           if(f[i]=='D'|s[i]=='D')
+          {
+              s[i]='d';
+               f[i]='d';
+          }
+           if(f[i]=='F'|s[i]=='F')
+          {
+              s[i]='f';
+               f[i]='f';
+          }
+           if(f[i]=='G'|s[i]=='G')
+          {
+              s[i]='g';
+              f[i]='g';
+          }
+           if(f[i]=='H'|s[i]=='H')
+          {
+              s[i]='h';
+               f[i]='h';
+          }
+           if(f[i]=='J'|s[i]=='J')
+          {
+              s[i]='j';
+                f[i]='j';
+          }
+           if(f[i]=='K'|s[i]=='K')
+          {
+              s[i]='k';
+               f[i]='k';
+          }
+           if(f[i]=='L'|s[i]=='L')
+          {
+              s[i]='l';
+               f[i]='l';
+          }
+           if(f[i]=='M'|s[i]=='M')
+          {
+              s[i]='m';
+                f[i]='m';
+          }
+           if(f[i]=='N'|s[i]=='N')
+          {
+              s[i]='n';
+                f[i]='n';
+          }
+           if(f[i]=='O'|s[i]=='O')
+          {
+              s[i]='o';
+               f[i]='o';
+          }
+           if(f[i]=='Q'|s[i]=='Q')
+          {
+              s[i]='q';
+               f[i]='q';
+          }
+           if(f[i]=='R'|s[i]=='R')
+          {
+              s[i]='r';
+              f[i]='r';
+          }
+           if(f[i]=='S'|s[i]=='S')
+          {
+              s[i]='s';
+               f[i]='s';
+          }
+           if(f[i]=='T'|s[i]=='T')
+          {
+              s[i]='t';
+              f[i]='t';
+          }
+           if(f[i]=='U'|s[i]=='U')
+          {
+              s[i]='u';
+               f[i]='u';
+          }
+          if(f[i]=='V'|s[i]=='V')
+          {
+              s[i]='v';
+               f[i]='v';
+          }
+          if(f[i]=='W'|s[i]=='W')
+          {
+              s[i]='w';
+              f[i]='w';
+          }
+          if(f[i]=='X'|s[i]=='X')
+          {
+              s[i]='x';
+               f[i]='x';
+          }
+          if(f[i]=='Y'|s[i]=='Y')
+          {
+              s[i]='y';
+               f[i]='y';
+          }
+          if(f[i]=='Z'|s[i]=='Z')
+          {
+              s[i]='z';
+                f[i]='z';
+          }
+
+          }
+          if(s==f)
+          {
+             cout<<"Yes"<<endl;
+          }
+          else
+          {
+              cout<<"No"<<endl;
+
+
+
+          }
+      }
+
+
+
+   }
+
+
+
+}
