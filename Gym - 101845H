@@ -1,0 +1,75 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int n,p,x,q=0,y;
+	cin>>n;
+
+	if(n==0)
+	{
+		cout<<"Sunday"<<endl;
+	}
+	else
+	{
+			x=1867;
+				y=n+1867;
+	for(int i=x+1;i<=y;i++)
+	{
+		if(i%4==0)
+		{
+			if(i%100==0)
+			{
+				if(i%400==0)
+				{
+					q=q+2;
+				}
+					else
+		     	{
+				q++;
+		     	}
+			}
+			else
+			{
+				q=q+2;
+			}
+			
+		}
+	    else{
+	    	q++;
+	    }
+	}
+	//cout<<q<<endl;
+	q=q;
+	p=q%7;
+	if(p==0)
+	{
+		cout<<"Sunday"<<endl;
+	}
+		if(p==1)
+	{
+		cout<<"Monday"<<endl;
+	}
+		if(p==2)
+	{
+		cout<<"Tuesday"<<endl;
+	}
+		if(p==3)
+	{
+		cout<<"Wednesday"<<endl;
+	}
+		if(p==4)
+	{
+		cout<<"Thursday"<<endl;
+	}
+		if(p==5)
+	{
+		cout<<"Friday"<<endl;
+	}
+		if(p==6)
+	{
+		cout<<"Saturday"<<endl;
+	}
+	}
+
+	return 0;
+}
